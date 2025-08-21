@@ -1,0 +1,250 @@
+    <!DOCTYPE html>
+    <html lang="en" class="scroll-smooth md:scroll-smooth">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Portfolio</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      
+      <style>
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fadeIn {
+        animation: fadeIn 0.8s ease forwards;
+      }
+    
+    </style>
+
+      <script>
+        // Tailwind Dark Mode
+        tailwind.config = {
+          darkMode: 'class'
+        }
+      </script>
+    </head>
+
+      <body class="bg-gradient-to-br from-black/60 to-gray-800 dark:bg-gray-900 text-black dark:text- transition-colors duration-500"></body>
+
+      <!-- ✅ Navbar -->
+      <nav class="fixed top-0 left-0 w-full flex items-center justify-between px-6 py-4 bg-black dark:bg-gray-800 shadow z-50">
+        <!-- Logo -->
+        <h1 class="text-xl font-bold text-white cursor-pointer hover:text-blue-700 transform transition duration-300">Nitesh Tripathi</h1>
+
+        <!-- Right side -->
+        <div class="flex items-center gap-4">
+          <!-- Dark Mode Toggle -->
+          <button id="darkToggle" class="text-2xl">🌙</button>
+
+            <!-- Menu Links -->
+        <ul id="menu" class="hidden absolute top-16 right-6 bg-gray-800 text-white rounded-lg p-4 space-y-2 
+                            md:flex md:space-y-0 md:static md:bg-transparent md:p-0 md:space-x-6">
+          <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+          <li><a href="#about" class="hover:text-blue-600">About</a></li>
+          <li><a href="#skill" class="hover:text-blue-600">Skill</a></li>
+          <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+          <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+        </ul>
+
+      </nav>
+
+      <!--Hero Section-->
+      <section id="home" class="flex flex-col items-center justify-center h-screen text-center pt-20">
+        <h2 class="text-3xl font-bold text-black">Hi There👋</h2>
+        <h2 class="text-3xl font-bold text-black">
+          I am Nitesh <span class="text-black/80 hover:text-yellow-500 cursor-pointer">Tripathi</span>
+        </h2>
+        <p class="text-xl text-black">
+          I am into <span class="text-blue-600 hover:text-yellow-500 cursor-pointer">Web Development</span>
+        </p>
+        <button class="inline-block mt-5 px-6 py-3 bg-blue-500 text-white rounded-3xl font-semibold hover:bg-blue-700">
+          View Resume
+        </button>
+                <div class="text-5xl   mt- px-6 py-5 text-white relative-size-2" id="about">
+                    <a href="#about" class="   hover:text-blue-600 transition-colors delay-200" ><i class='bx bx-chevrons-down'></i> </a>
+                    </div>   
+      </section>
+      
+      <!-- About Section -->
+      <section id="about" class=" text-white py-0 px-20 md:max-xl:flex">
+        <div class="container mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+          <!-- Left -->
+          <div class="md:w-1/2">
+            <h2 class="text-3xl font-bold flex items-center gap-2 mb-4">
+              <span class="text-blue-400  ">👤</span> About Me
+            </h2>
+            <p class="text-lg leading-relaxed text-gray-300">
+              I'm a passionate web developer 💻 currently completed a B.C.A. at 
+              <span class="font-semibold text-blue-400">Naraina College of Management Kanpur</span>, 
+              with hands-on experience in building full-stack web applications.
+            </p>
+            <a href="#" class="mt-6 inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-500 rounded-lg shadow-md transition">
+              📄 Download CV
+            </a>
+          </div> 
+
+          <!-- Right -->
+          <div class="md:w-1/2 bg-gray-800 p-6 rounded-2xl shadow-lg">
+            <h3 class="text-2xl font-semibold mb-4 flex items-center gap-2">
+              Key Skills 🛠️
+            </h3>
+            <div class="flex flex-wrap gap-3">
+              <span class="px-4 py-2 bg-gray-700 rounded-full shadow-md">⚛ React.js</span>
+              <span class="px-4 py-2 bg-gray-700 rounded-full shadow-md">🟢 Node.js</span>
+              <span class="px-4 py-2 bg-gray-700 rounded-full shadow-md">🚀 Express.js</span>
+              <span class="px-4 py-2 bg-gray-700 rounded-full shadow-md">🍃 MongoDB</span>
+              <span class="px-4 py-2 bg-gray-700 rounded-full shadow-md">📜 JavaScript</span>
+              <span class="px-4 py-2 bg-gray-700 rounded-full shadow-md">🌐 HTML</span>
+              <span class="px-4 py-2 bg-gray-700 rounded-full shadow-md">🎨 CSS</span>
+              <span class="px-4 py-2 bg-gray-700 rounded-full shadow-md">🌊 Tailwind CSS</span>
+              <span class="px-4 py-2 bg-gray-700 rounded-full shadow-md">🗄 SQL</span>
+              <span class="px-4 py-2 bg-gray-700 rounded-full shadow-md">🐍 Python</span>
+              <span class="px-4 py-2 bg-gray-700 rounded-full shadow-md">💻 PHP</span>
+            </div>
+          </div>
+        </div>
+        </section>
+      <section class=" py-12 px-4 max-w-6xl mx-auto bg-" id=skill>
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 mt-40" > Technical Skill💻</h2>
+        
+      <div class=" grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+        <!--Frontend-->
+          <div class="bg-black/60  backdrop-blur-lg rounded-xl  p-6 shadow-lg border border-gray-700 hover:scale-105   transition-transform">
+            <h3 class="flex items-center text-xl font-semibold mb-4 text-white">
+              <span class="text-blue-400 mr-2">💻</span>Frontend</h3>
+              <div class="flex flex-wrap gap-2 cursor-pointer">
+              <span class="bg-blue-400 px-3 py-1 rounded-full text-white">React.js</span>
+              <span class="bg-blue-400 px-3 py-1 rounded-full text-white">HTML</span>
+              <span class="bg-blue-400 px-3 py-1 rounded-full text-white">CSS</span>
+              <span class="bg-blue-400 px-3 py-1 rounded-full text-white">Tailwind CSS</span>
+              <span class="bg-blue-400 px-3 py-1 rounded-full text-white">JavaScript</span>
+            </div>
+          </div>
+          <!--Database-->
+        <div class="bg-black/60 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-gray-700 hover:scale-105 transition-transform">
+          <h3 class="flex items-center text-xl font-semibold mb-4 text-white">
+            <span class="text-blue-400 mr-2">🗃️</span>Database
+          </h3>
+          <div class="flex flex-wrap gap-2 cursor-pointer">
+            <span class="bg-blue-400 px-3 py-1 rounded-full text-white"> MongoDB</span>
+            <span class="bg-blue-400 px-3 py-1 rounded-full text-white">SQL</span>
+          </div>
+        </div>
+          <!-- Backend-->
+            <div class="bg-black/60 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-gray-700 hover:scale-105 transition-transform">
+              <h3 class="flex items-center text-xl font-semibold mb-4 text-white">
+                <span class=" text-blue-400 mr-2">🗄️</span>Backend</h3>
+                    <div class="flex flex-wrap gap-2 cursor-pointer">
+                      <span class="bg-blue-400 px-3 py-1 rounded-full text-white">Node.js</span>
+                      <span class="bg-blue-400 px-3 py-1 rounded-full text-white " >Express js</span>
+                    </div>         
+            </div>
+
+          <!--Language-->
+              <div class=" bg-black/60 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-gray-700 hover:scale-105 transition-transform">
+                <h3 class="flex items-center text-xl font-semibold mb-4 text-white">
+                  <span class="text-blue-400 mr-2">💻</span>Language
+                </h3>
+                  <div class="flex flex-wrap gap-2 cursor-pointer">
+                    <span class="bg-blue-400 px-3 py-1 rounded-full text-white"> Python</span>
+                    <span class=""></span> 
+                  </div>
+              </div>
+            
+          <!-- Tools & Platforms -->
+          <div class=" bg-black/60 backdrop-blur-lg p-6 rounded-xl shadow-lg border-gray-700 hover:scale-105 transition-transform">
+            <h3 class="flex items-center text-xl font-semibold mb-4 text-white">
+              <span class="text-blue-400 mr-2">🔧</span>Tools & Platform
+            </h3>
+            <div class=" flex flex-wrap gap-2 cursor-pointer">
+              <span class="bg-blue-400 px-3 py-1 rounded-full text-white">Vs code</span>
+              <span class=" bg-blue-400 px-3 py-1 rounded-full text-white">GitHub</span>
+            </div>
+          </div>
+    </section>
+
+    
+    <footer id="contact" class="py-16 px-6 md:px-20">
+      <section class="max-w-6xl mx-auto px-6 py-16">
+      <h2 class="text-4xl font-bold text-center mb-12">Get In Touch</h2>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Contact Info -->
+        <div class="space-y-6">
+          <h3 class="text-2xl font-semibold">Contact Information</h3>
+          <p class="text-gray-400">Feel free to reach out via email or find me on social media.</p>
+
+          <div class="flex items-center space-x-4">
+            <div class="bg-gray-800 p-3 rounded-full">
+              📧
+            </div>
+            <a href="mailto:Niteshtripathi784@gmail.com" class="text-gray-300 hover:text-white">
+                  Niteshtripathi784@gmail.com
+            </a>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <div class="bg-gray-800 p-3 rounded-full">
+              📍
+            </div>
+            <p class="text-gray-300">Kanpur Dehat, Uttar Pradesh, India</p>
+          </div>
+
+          <div class="flex space-x-4 pt-4">
+            <a href="https://github.com/" class="bg-gray-800 p-3 rounded-lg hover:bg-gray-700"><i class='bx bxl-github' ></i> </a>
+            <a href="https://www.linkedin.com/feed/" class="bg-gray-800 p-3 rounded-lg hover:bg-gray-700"> <i class='bx bxl-linkedin' ></i></a>
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" class="bg-gray-800 p-3 rounded-lg hover:bg-gray-700"><i class='bx bxl-gmail'></i></a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="bg-black/40 border border-gray-800 rounded-xl p-8">
+          <h3 class="text-2xl font-semibold mb-6">Send me a message</h3>
+
+          <form action="#" method="POST" class="space-y-6">
+            <div>
+              <label class="block mb-2 text-sm">Name</label>
+              <input type="text" placeholder="Your Name" 
+                class="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <div>
+              <label class="block mb-2 text-sm">Email</label>
+              <input type="email" placeholder="your.email@example.com" 
+                class="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <div>
+              <label class="block mb-2 text-sm">Message</label>
+              <textarea rows="5" placeholder="Your message..." 
+                class="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+            </div>
+
+            <button type="submit" 
+              class="w-full py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    </footer>
+    <div class="  bg-gray-800 text-amber-50 p-2">
+          <h3>Copyright © 2025 [Niteshtripathi ....] All rights reserved.</h3>
+          <div class=""> </div>
+        </div>
+
+              
+  
+
+    
+
+      <!-- JS -->
+      <script src="java.js"></script>
+    <script src="server.js"></script>
+    </footer>
+    </body>
+    </html>
